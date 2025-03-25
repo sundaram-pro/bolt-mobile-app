@@ -20,9 +20,20 @@ model User {
   updatedAt DateTime @updatedAt
 }
 
-model Project{
+model Project {
   id        String   @id @default(uuid())
   name      String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  prompts   Prompt[]
+  userId    String
+}
+
+model Prompt {
+  id        String   @id @default(uuid())
+  text      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  project   Project  @relation(fields: [projectId], references: [id])
+  projectId String
 }
