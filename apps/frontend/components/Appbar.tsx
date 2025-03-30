@@ -1,7 +1,5 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
 import {
-  ClerkProvider,
   SignInButton,
   SignUpButton,
   SignedIn,
@@ -9,7 +7,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 
-const AppBar = () => {
+const Appbar = () => {
   return (
     <div className="flex justify-between">
       <div>Bolty</div>
@@ -26,4 +24,4 @@ const AppBar = () => {
   );
 };
 
-export default AppBar;
+export default Appbar;

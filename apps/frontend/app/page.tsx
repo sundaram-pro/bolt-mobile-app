@@ -1,13 +1,11 @@
-import AppBar from "@/components/AppBar";
+import Appbar from "@/components/Appbar";
 import Prompt from "@/components/Prompt";
 import TemplateButtons from "@/components/TemplateButtons";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="p-4">
-      <AppBar />
+      <Appbar />
       <div className="max-w-4xl mx-auto pt-32">
         <div className="text-3xl font-bold text-center">
           What do you want to build?
