@@ -16,6 +16,7 @@ const Prompt = () => {
         placeholder="Create a snake game..." 
         value={prompt}
         onChange={(e) => setPrompt(e.target.value)}
+        className="resize-none"
       />
       <div className="w-full h-fit flex justify-end pt-2">
         <Button 
